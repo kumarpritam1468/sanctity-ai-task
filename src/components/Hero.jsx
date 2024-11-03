@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <>
       <section className=' pt-16 pb-4 px-4 h-screen overflow-hidden hero-box'>
-        <img src="/gradbg1.png" alt="bg" className=' absolute -top-1/2 left-[35%]' />
-        <img src="/gradbg1.png" alt="bg" className=' absolute -rotate-[140deg] -top-20 right-1/2' />
+        <img src="/gradbg1.png" alt="bg" className=' absolute -top-1/2 2xl:-top-32 left-[35%] 2xl:left-[45%]' />
+        <img src="/gradbg1.png" alt="bg" className=' absolute -rotate-[140deg] 2xl:-rotate-[130deg] -top-20 2xl:top-0 right-1/2 2xl:right-[55%]' />
         {/* <img src="/svg4.svg" alt="svg" className="absolute right-4 bottom-4 w-20 z-50" /> */}
 
         <div className=' h-full w-full bg-black/20 relative z-10 rounded-3xl flex items-center justify-center'>

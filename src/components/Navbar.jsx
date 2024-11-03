@@ -1,7 +1,9 @@
-import React from 'react'
-import {ArrowRight} from "lucide-react";
+import React, { useState } from 'react'
+import { ArrowRight, X, ArrowUpRight } from "lucide-react";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className='fixed flex h-16 px-6 w-full justify-between items-center z-50'>
       <div>
@@ -9,7 +11,9 @@ const Navbar = () => {
       </div>
 
       <div className=' flex gap-4 items-center'>
-        <div className=' flex flex-col gap-1 rounded-full items-center justify-center bg-[#42524B]/80 backdrop-blur-lg size-12 group cursor-pointer' >
+        <div className=' flex flex-col gap-1 rounded-full items-center justify-center bg-[#42524B]/60 backdrop-blur-lg size-12 group cursor-pointer'
+          onClick={() => setMenuOpen(true)}
+        >
           <div className=' bg-[#6F907E] h-0.5 w-4 mr-2 group-hover:ml-4 transition-all duration-300'></div>
           <div className=' bg-[#6F907E] h-0.5 w-4 ml-2 group-hover:mr-4 transition-all duration-300'></div>
         </div>
@@ -27,6 +31,48 @@ const Navbar = () => {
               <ArrowRight size={16} color='#97d28b' />
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className={`${menuOpen ? "absolute" : "hidden"} z-40 top-0 left-0 w-full h-screen bg-black/70`}>
+      </div>
+      <div className={`absolute z-50 bg-white/10 backdrop-blur-lg h-[calc(100vh-32px)] top-4 -right-[500px]  ${menuOpen ? " right-5" : ""} rounded-3xl w-[400px] max-md:[300px] transition-all duration-500 ease-out px-6 flex flex-col justify-between py-8`}>
+        <div className="flex flex-col gap-6">
+          <div className="flex cursor-pointer gap-2" onClick={() => setMenuOpen(false)}>
+            <X color='#6B766A' />
+            <h2 className='text-[#6B766A]'>close</h2>
+          </div>
+
+          <div className=' bg-[#6B766A] h-0.5 w-full'></div>
+
+          <div className=' flex flex-col gap-2'>
+            <a href="/" className=' no-underline text-pri hover:text-[#6B766A] text-4xl font-medium flex items-end gap-1 transition-all duration-300'>
+              <span>Services</span>
+              <ArrowUpRight size={24} color='#6B766A' />
+            </a>
+            <a href="/" className=' no-underline text-pri hover:text-[#6B766A]  text-4xl font-medium flex items-end gap-1 transition-all duration-300'>
+              <span>Resources</span>
+              <ArrowUpRight size={24} color='#6B766A' />
+            </a>
+            <a href="/" className=' no-underline text-pri hover:text-[#6B766A] text-4xl font-medium flex items-end gap-1 transition-all duration-300'>
+              <span>Case Studies</span>
+              <ArrowUpRight size={24} color='#6B766A' />
+            </a>
+            <a href="/" className=' no-underline text-pri hover:text-[#6B766A] text-4xl font-medium flex items-end gap-1 transition-all duration-300'>
+              <span>About</span>
+              <ArrowUpRight size={24} color='#6B766A' />
+            </a>
+            <a href="/" className=' no-underline text-pri hover:text-[#6B766A] text-4xl font-medium flex items-end gap-1 transition-all duration-300'>
+              <span>Contact</span>
+              <ArrowUpRight size={24} color='#6B766A' />
+            </a>
+          </div>
+        </div>
+
+        <div className=' flex flex-col gap-1'>
+          <p className=' text-lg text-[#6B766A] font-medium'>UpWork</p>
+          <p className=' text-lg text-[#6B766A] font-medium'>Fiverr</p>
+          <p className=' text-lg text-[#6B766A] font-medium'>LinkedIn</p>
         </div>
       </div>
     </nav>
