@@ -4,13 +4,20 @@
 body{
   background: #272D29;
   color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 @tailwind utilities;
-
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  scrollbar-width: none !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
 }
