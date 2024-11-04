@@ -38,7 +38,7 @@ const Services = () => {
                                 <ArrowUpRight />
                             </div>
 
-                            <img src="/svg2.svg" alt="" className=' absolute z-20 -top-12 -right-12 size-16 group-hover:-top-0.5 group-hover:-right-0.5 transition-all duration-500 ease-in-out' />
+                            <img src="/svg2.svg" alt="" className=' absolute z-20 -top-12 -right-12 size-[4.4rem] group-hover:-top-0.5 group-hover:-right-0.5 transition-all duration-500 ease-in-out' />
 
                             <div className=' size-64 absolute z-10 top-full group-hover:top-0 transition-all duration-500 ease-in-out left-0 bg-sec'>
                             </div>

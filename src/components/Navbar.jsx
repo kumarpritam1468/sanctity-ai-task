@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
 
       <div className=' flex gap-4 items-center'>
-        <div className=' flex flex-col gap-1 rounded-full items-center justify-center bg-[#42524B]/60 backdrop-blur-lg size-12 group cursor-pointer'
+        <div className=' flex flex-col gap-1 rounded-full items-center justify-center bg-[#42524B]/40 backdrop-blur-lg size-12 group cursor-pointer'
           onClick={() => setMenuOpen(true)}
         >
           <div className=' bg-[#6F907E] h-0.5 w-4 mr-2 group-hover:ml-4 transition-all duration-300'></div>

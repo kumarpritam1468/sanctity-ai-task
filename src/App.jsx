@@ -3,6 +3,7 @@ import { createRef, useEffect } from "react";
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Services from "./components/Services";
+import TrackRecord from "./components/TrackRecord";
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
-      <div className="h-screen bg-white"></div>
+      <TrackRecord />
+      {/* <div className="h-screen bg-white"></div> */}
     </main>
   )
 }
