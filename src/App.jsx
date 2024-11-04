@@ -2,6 +2,7 @@ import locomotiveScroll from "locomotive-scroll";
 import { createRef, useEffect } from "react";
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+import Services from "./components/Services";
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
     <main ref={scrollRef}>
       <Navbar />
       <Hero />
+      <Services />
+      <div className="h-screen bg-white"></div>
     </main>
   )
 }
