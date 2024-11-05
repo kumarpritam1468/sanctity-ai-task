@@ -4,6 +4,7 @@ import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Services from "./components/Services";
 import TrackRecord from "./components/TrackRecord";
+import WhyUs from "./components/WhyUs";
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
       <Hero />
       <Services />
       <TrackRecord />
-      {/* <div className="h-screen bg-white"></div> */}
+      <WhyUs />
     </main>
   )
 }

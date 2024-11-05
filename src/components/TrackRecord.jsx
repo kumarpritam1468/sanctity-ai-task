@@ -39,8 +39,8 @@ const TrackRecord = () => {
         <ArrowDown className=' absolute left-3 top-10' size={30} />
       </motion.div>
 
-      <div className=' absolute top-0 left-28 flex items-start'>
-        <img src="/svg7.svg" alt="" className=' rotate-90' />
+      <div className=' absolute top-0 left-[6.7rem] flex items-start'>
+        <img src="/svg7.svg" alt="" className=' rotate-90 -mr-[.5px]' />
         <div className=' bg-[#272D29] rounded-b-3xl w-80 h-20 pt-3 text-[1.3rem] font-medium flex items-center justify-center text-pri/60'>
           Track Record
         </div>
