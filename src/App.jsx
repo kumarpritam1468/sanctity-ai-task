@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar"
 import Services from "./components/Services";
 import TrackRecord from "./components/TrackRecord";
 import WhyUs from "./components/WhyUs";
+import Clients from "./components/Clients";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Services />
       <TrackRecord />
       <WhyUs />
+      <Clients />
     </main>
   )
 }
