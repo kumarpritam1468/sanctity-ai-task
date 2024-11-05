@@ -68,36 +68,36 @@ export const accordions = [
 export const fiverrClients = [
     {
         tag: "151 of 324",
-        imgSrc: "/clients/client1.png",
-        client: "Ben Cane",
+        imgSrc: "/clients/client1.jpg",
+        name: "Ben Cane",
         clientRole: "Founder of Munity",
         review: "Working with Addifico was a pleasure. Despite needing market research and competitor analysis in a niche area, they delivered beyond my expectations. All of the work was comprehensive, well-structured and extremely detailed. The communication was perfect and they operated with great professionalism."
     },
     {
         tag: "242 of 324",
-        imgSrc: "/clients/client2.png",
-        client: "Will Eversten",
+        imgSrc: "/clients/client2.jpg",
+        name: "Will Eversten",
         clientRole: "CEO at Axeleos Consulting",
         review: "This is my second time working with Addifico Consulting on a market research project. They are prompt, professional, and provide top-notch deliverables. They are always quick to respond with clarification if needed, and overall, they’ve been a pleasure to work with. I'd heartily recommend them for anyone looking for professional market research."
     },
     {
         tag: "5 of 324",
-        imgSrc: "/clients/client3.png",
-        client: "Deshawn Robinson",
+        imgSrc: "/clients/client3.jpg",
+        name: "Deshawn Robinson",
         clientRole: "ceo at doors open connect",
         review: "Addifico was phenomenal and worked quickly to help me get the information I needed. In addition to purchasing one of the programs/plans they had, they helped me figure out what I needed best. They were able to also help me break down the data and provided some additional feedback on my pitch deck. I look forward to working with them further as I expand on my project. Highly recommend."
     },
     {
         tag: "137 of 324",
-        imgSrc: "/clients/client4.png",
-        client: "Nelson Dunk",
+        imgSrc: "/clients/client4.jpg",
+        name: "Nelson Dunk",
         clientRole: "chief creative office at skylight visual media",
         review: "Phenomenal job. We are a very niche market and I'm sure it took some extra digging to find all the information for the market research report. The report is incredibly detailed, accurate and well written. Very very happy with the work!"
     },
     {
         tag: "57 of 324",
-        imgSrc: "/clients/client5.png",
-        client: "Oliver Lauche",
+        imgSrc: "/clients/client5.jpg",
+        name: "Oliver Lauche",
         clientRole: "Founder of witjaw",
         review: "The analysis was very profound, even though the business model is rather new and experimental. Every result and figure was marked with the source and every calculation can be reconsidered"
     },
@@ -106,29 +106,29 @@ export const fiverrClients = [
 export const upworkClients = [
     {
         tag: "241 of 324",
-        imgSrc: "/clients/client6.png",
-        client: "Kristen Proctor",
+        imgSrc: "/clients/client6.jpg",
+        name: "Kristen Proctor",
         clientRole: "Head of strategic growth at autofulil limited",
         review: "Working with Addifico was a pleasure. Despite needing market research and competitor analysis in a niche area, they delivered beyond my expectations. All of the work was comprehensive, well-structured and extremely detailed. The communication was perfect and they operated with great professionalism."
     },
     {
         tag: "54 of 324",
-        imgSrc: "/clients/client7.png",
-        client: "Mohamed Ahmed",
+        imgSrc: "/clients/client7.jpg",
+        name: "Mohamed Ahmed",
         clientRole: "XCEO at magalix(acquired by weaveworks)",
         review: "Addifico Consulting did an excellent job researching, writing, and editing ebooks and market insight reports for us. They welcomed all feedback and adjusted it accordingly in the documents. I highly recommend Addifico Consulting for their excellent research skills and we will definitely be working with them again."
     },
     {
         tag: "52 of 324",
-        imgSrc: "/clients/client8.png",
-        client: "Bar Winkler",
+        imgSrc: "/clients/client8.jpg",
+        name: "Bar Winkler",
         clientRole: "ex senior director bd at ironsource",
         review: "Addifico's team are masters at their work. They helped us with research, CI, data analysis and many tasks which took them 1/10 of the time they would take us. In all cases, their work was professional. I strongly recommend anyone looking for a high-quality research and analysis to hire Addifico Consulting."
     },
     {
         tag: "184 of 324",
-        imgSrc: "/clients/client9.png",
-        client: "Laurent Goffinon",
+        imgSrc: "/clients/client9.jpg",
+        name: "Laurent Goffinon",
         clientRole: "founder of hirepro",
         review: "Addifico did an amazing job in a quick turn-around. They go straight to the point and provide great reasoning and the thought process for any deliverable! I would highly recommend them!"
     },

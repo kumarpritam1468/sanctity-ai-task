@@ -24,6 +24,11 @@ body {
   width: 0;
 }
 
+/* .swiper-slide{
+  background: #dcefd8;
+  border-radius: 1.5rem;
+} */
+
 @media screen and (min-width:1440px) {
   html {
     font-size: 130%;

@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import TrackRecord from "./components/TrackRecord";
 import WhyUs from "./components/WhyUs";
 import Clients from "./components/Clients";
+import Reviews from "./components/Reviews";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
       <TrackRecord />
       <WhyUs />
       <Clients />
+      <Reviews />
     </main>
   )
 }
