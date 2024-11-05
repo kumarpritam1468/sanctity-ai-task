@@ -48,7 +48,7 @@ const Reviews = () => {
             </div>
 
 
-            <div className={`w-1/2 px-[4.75rem] relative opacity-0 translate-x-10 translate-y-10 rotate-[6deg] ${changing ? "" : "translate-x-0 translate-y-2 rotate-[0deg] opacity-100"} transition-all duration-500 ease-in-out`}>
+            <div className={`w-1/2 px-[4.75rem] relative  ${changing ? "opacity-0 translate-x-10 translate-y-10 rotate-[6deg]" : "translate-x-0 translate-y-2 rotate-[0deg] opacity-100"} transition-all duration-500 ease-in-out`}>
                 <div className='swiper-button-prev absolute -left-6 top-1/2 z-20 size-10 rounded-full bg-[#1E2421] group cursor-pointer overflow-hidden'>
                     <div className="relative text-pri w-full h-full flex items-center justify-center">
                         <ArrowLeft size={18} strokeWidth={1} className='absolute right-3 group-hover:right-full transition-all duration-300 ease-in-out' />
