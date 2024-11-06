@@ -8,17 +8,17 @@ const Services = () => {
 
     const { scrollYProgress } = useScroll({
         target: ref1,
-        offset: ["start start", "end start"],
+        offset: ["start 0.4", "end start"],
     });
 
-    const moveX = useTransform(scrollYProgress, [0, 0.8, 1], ['0rem', '-105rem', '-105rem']);
+    const moveX = useTransform(scrollYProgress, [0, 0.8, 1], ['0rem', '-108rem', '-108rem']);
 
     return (
         <section className=' h-[400vh] w-full relative z-10 pt-40 mb-40' ref={ref1}>
             <div className=' sticky top-28'>
                 <h1 className=' text-pri text-9xl font-medium ml-36'>Services</h1>
 
-                <div className=' flex gap-4 w-max relative top-6 left-[60%]'>
+                <div className=' flex gap-4 w-max relative top-2 left-[60%]'>
                     {servicesCards.map((card, index) => (
                         <motion.div className=' size-64 bg-[#35413A] rounded-3xl py-4 px-6 flex flex-col justify-between relative overflow-hidden group cursor-pointer' key={index} style={{ x: moveX }}>
                             <div className={`text-sec relative z-30 group-hover:text-gray-600`} dangerouslySetInnerHTML={{ __html: card.icon }}>
@@ -40,7 +40,7 @@ const Services = () => {
 
                             <img src="/svg2.svg" alt="" className=' absolute z-20 -top-12 -right-12 size-[4.4rem] group-hover:-top-0.5 group-hover:-right-0.5 transition-all duration-500 ease-in-out' />
 
-                            <div className=' size-64 absolute z-10 top-full group-hover:top-0 transition-all duration-500 ease-in-out left-0 bg-sec'>
+                            <div className=' size-64 absolute z-10 top-full group-hover:top-0 transition-all duration-[600ms] ease-in-out left-0 bg-sec'>
                             </div>
                         </motion.div>
                     ))}

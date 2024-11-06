@@ -23,7 +23,7 @@ const Clients = () => {
     }
 
     return (
-        <div className=' relative z-10 mx-4 h-[105vh] bg-pri rounded-3xl grid grid-cols-6 grid-rows-3 gap-4 p-4 mb-40'>
+        <section className=' relative z-10 mx-4 h-[105vh] bg-pri rounded-3xl grid grid-cols-6 grid-rows-3 gap-4 p-4 mb-40'>
             <div className=' col-span-2 rounded-xl border border-ter/30 py-5 px-4 text-4xl text-ter font-medium'>
                 Who trusts us?
             </div>
@@ -158,7 +158,7 @@ const Clients = () => {
             <img src="/svg7.svg" alt="" className=' -rotate-[180deg] w-6 absolute bottom-12 right-0' />
             <img src="/svg7.svg" alt="" className=' -rotate-[180deg] w-4 absolute bottom-0 right-36' />
 
-        </div>
+        </section>
     )
 }
 

@@ -133,3 +133,21 @@ export const upworkClients = [
         review: "Addifico did an amazing job in a quick turn-around. They go straight to the point and provide great reasoning and the thought process for any deliverable! I would highly recommend them!"
     },
 ]
+
+export const resources = [
+    {
+        date:"October 23, 2023",
+        title:"Startup Market Sizing: Founder's Guide to TAM...",
+        tag:"Market Sizing and Forecasting"
+    },
+    {
+        date:"October 2, 2023",
+        title:"7 Simple Steps to Ace Your Startup Market Research",
+        tag:"Business Plan & Pitch Deck"
+    },
+    {
+        date:"September 27, 2023",
+        title:"Research and Planning for a New Business in 4 Steps",
+        tag:"Business Plan & Pitch Deck"
+    },
+]

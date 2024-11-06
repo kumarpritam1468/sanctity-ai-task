@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 body {
   background: #272D29;
   color: white;
-  overflow-x: hidden;
+  width: 100vw !important;
+  overflow-x: hidden !important;
   scroll-behavior: smooth;
 }
-
-@tailwind utilities;
 
 * {
   margin: 0;
@@ -23,11 +23,6 @@ body {
   display: none;
   width: 0;
 }
-
-/* .swiper-slide{
-  background: #dcefd8;
-  border-radius: 1.5rem;
-} */
 
 @media screen and (min-width:1440px) {
   html {

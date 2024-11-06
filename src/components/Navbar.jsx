@@ -1,13 +1,50 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ArrowRight, X, ArrowUpRight } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Took help from AI
+
+  const getCurrentlyVisibleSection = () => {
+    const viewportHeight = window.innerHeight;
+    const scrollPosition = window.scrollY;
+    const sections = document.querySelectorAll('section');
+  
+    for (const section of sections) {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      if (scrollPosition >= sectionTop - viewportHeight / 2 && scrollPosition < sectionTop + sectionHeight - viewportHeight / 2) {
+        return section;
+      }
+    }
+    return null;
+  };  
+
+  const [logoColor, setLogoColor] = React.useState('white');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentSection = getCurrentlyVisibleSection();
+      if (currentSection) {
+        const sectionIndex = Array.prototype.indexOf.call(document.querySelectorAll('section'), currentSection);
+        if (sectionIndex === 3 || sectionIndex === 5 || sectionIndex === 7) {
+          setLogoColor('black');
+        } else {
+          setLogoColor('white');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
   return (
-    <nav className='fixed flex h-16 px-6 w-full justify-between items-center z-50'>
+    <nav className='fixed flex h-16 px-4 w-screen justify-between items-center z-50'>
       <div>
-        <img src="/logo.png" alt="Sanctity" className=' invert w-40' />
+        <img src="/logo.png" alt="Sanctity" className={`${logoColor === "white" ? "invert" : "invert-0"} w-36`} />
       </div>
 
       <div className=' flex gap-4 items-center'>
