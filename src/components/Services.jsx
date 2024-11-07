@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import React, { useRef } from 'react'
 import {servicesCards} from "../data/data.js"
 import { ArrowUpRight } from "lucide-react";
+import { useMediaQuery } from 'react-responsive';
 
 const Services = () => {
     const ref1 = useRef();
@@ -11,16 +12,18 @@ const Services = () => {
         offset: ["start 0.4", "end start"],
     });
 
+    const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
+
     const moveX = useTransform(scrollYProgress, [0, 0.8, 1], ['0rem', '-108rem', '-108rem']);
 
     return (
-        <section className=' h-[400vh] w-full relative z-10 pt-40 mb-40' ref={ref1}>
+        <section className=' h-[400vh] max-md:h-fit w-full relative z-10 pt-40 mb-40' ref={ref1}>
             <div className=' sticky top-28'>
-                <h1 className=' text-pri text-9xl font-medium ml-36'>Services</h1>
+                <h1 className=' text-pri text-9xl max-md:text-8xl max-md:mb-6 font-medium ml-36 max-md:ml-6'>Services</h1>
 
-                <div className=' flex gap-4 w-max relative top-2 left-[60%]'>
+                <div className=' flex gap-4 w-max max-md:w-screen max-md:px-6 relative top-2 left-[60%] max-md:flex-col max-md:left-0'>
                     {servicesCards.map((card, index) => (
-                        <motion.div className=' size-64 bg-[#35413A] rounded-3xl py-4 px-6 flex flex-col justify-between relative overflow-hidden group cursor-pointer' key={index} style={{ x: moveX }}>
+                        <motion.div className=' size-64 max-md:w-full bg-[#35413A] rounded-3xl py-4 px-6 flex flex-col justify-between relative overflow-hidden group cursor-pointer' key={index} style={isDesktop ? { x: moveX } : {}}>
                             <div className={`text-sec relative z-30 group-hover:text-gray-600`} dangerouslySetInnerHTML={{ __html: card.icon }}>
                             </div>
 
@@ -38,9 +41,9 @@ const Services = () => {
                                 <ArrowUpRight />
                             </div>
 
-                            <img src="/svg2.svg" alt="" className=' absolute z-20 -top-12 -right-12 size-[4.4rem] group-hover:-top-0.5 group-hover:-right-0.5 transition-all duration-500 ease-in-out' />
+                            <img src="/svg2.svg" alt="" className=' absolute z-20 -top-12 -right-12 max-md:top-0 max-md:right-0 size-[4.4rem] max-md:size-20 group-hover:-top-0.5 group-hover:-right-0.5 transition-all duration-500 ease-in-out' />
 
-                            <div className=' size-64 absolute z-10 top-full group-hover:top-0 transition-all duration-[600ms] ease-in-out left-0 bg-sec'>
+                            <div className=' size-64 absolute z-10 top-full group-hover:top-0 transition-all duration-[600ms] ease-in-out left-0 bg-sec max-md:hidden'>
                             </div>
                         </motion.div>
                     ))}

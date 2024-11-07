@@ -8,6 +8,7 @@ import WhyUs from "./components/WhyUs";
 import Clients from "./components/Clients";
 import Reviews from "./components/Reviews";
 import Resources from "./components/Resources";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -30,7 +31,7 @@ function App() {
       <Clients />
       <Reviews />
       <Resources />
-      <section className=" h-[125vh] bg-white relative z-10"></section>
+      <Footer />
     </main>
   )
 }

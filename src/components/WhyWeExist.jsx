@@ -16,14 +16,14 @@ const WhyWeExist = () => {
     console.log(scrollYProgress.get());
 
     return (
-        <section className=" h-fit pt-[calc(100vh-150px)] w-full px-32 relative z-10 pb-24">
+        <section className=" h-fit pt-[calc(100vh-150px)] max-md:pt-[70vh] w-full px-32 max-md:px-6 relative z-10 pb-24">
             <img src="/gradbg1.png" alt="bg" className=' absolute -rotate-[130deg] 2xl:-rotate-[130deg] -z-10 top-96 right-[60%] opacity-60' />
 
             <div className='h-0.5 w-full bg-ter '></div>
 
-            <div className="flex w-full justify-between mt-10 relative">
-                <p className=' text-pri sticky top-20 h-fit'>Why we exist?</p>
-                <h2 className=' font-medium w-1/2 text-[2.6rem] leading-[3.2rem] ' ref={pref}>
+            <div className="flex max-md:flex-col w-full justify-between mt-10 relative">
+                <p className=' text-pri sticky top-20 h-fit max-md:ml-6 max-md:text-4xl mb-12'>Why we exist?</p>
+                <h2 className=' font-medium w-1/2 max-md:w-full max-md:px-4 text-[2.6rem] leading-[3.2rem] ' ref={pref}>
                     {words.map((word, index) => {
                         const chars = word.split("");
                         const start = index / words.length;
