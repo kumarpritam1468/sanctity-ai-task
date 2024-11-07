@@ -1,14 +1,20 @@
 # Sanctity AI Frontend Intern Task - Replication Project
 
 Project Overview:
+
 I, Pritam Kumar Manohari, worked on replicating the frontend of the reference website for the Sanctity AI intern task. This includes exact animations, hover effects, and responsiveness across various devices—tablets, phones, and desktops. I aimed to achieve a 99% match with the original design, ensuring seamless visual and functional accuracy.
 
 Running the Project Locally:
+
 To run this React + Vite project on your local environment:
 
 Install dependencies:
+
 npm install
+
+
 Start the development server:
+
 npm run dev
 
 
