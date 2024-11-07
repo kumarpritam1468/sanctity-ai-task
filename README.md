@@ -1,8 +1,15 @@
-# React + Vite
+# Sanctity AI Frontend Intern Task - Replication Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Overview:
+I, Pritam Kumar Manohari, worked on replicating the frontend of the reference website for the Sanctity AI intern task. This includes exact animations, hover effects, and responsiveness across various devices—tablets, phones, and desktops. I aimed to achieve a 99% match with the original design, ensuring seamless visual and functional accuracy.
 
-Currently, two official plugins are available:
+Running the Project Locally:
+To run this React + Vite project on your local environment:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Install dependencies:
+npm install
+Start the development server:
+npm run dev
+
+
+I literally didn't think that I would complete it this much accurately, This project was an engaging challenge that I dedicated significant time and effort to complete. I'm genuinely excited about the opportunity to bring my skills to Sanctity AI and contribute to innovative, user-friendly web experiences.
