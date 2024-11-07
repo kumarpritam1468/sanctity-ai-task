@@ -71,9 +71,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={`${menuOpen ? "absolute" : "hidden"} z-40 top-0 left-0 w-full h-screen bg-black/70`}>
+      <div className={`${menuOpen ? "absolute" : "hidden"} z-40 top-0 left-0 w-full h-[100svh] bg-black/70`}>
       </div>
-      <div className={`absolute z-50 bg-white/10 backdrop-blur-lg h-[calc(100vh-32px)] top-4 -right-[500px]  ${menuOpen ? " right-5" : ""} rounded-3xl w-[400px] max-md:[300px] transition-all duration-500 ease-out px-6 flex flex-col justify-between py-8`}>
+      <div className={`absolute z-50 bg-white/10 backdrop-blur-lg h-[calc(100vh-32px)] top-4 -right-[500px]  ${menuOpen ? " right-5" : ""} rounded-3xl w-[400px] max-md:w-[300px] max-sm:w-[250px] transition-all duration-500 ease-out px-6 flex flex-col justify-between py-8`}>
         <div className="flex flex-col gap-6">
           <div className="flex cursor-pointer gap-2" onClick={() => setMenuOpen(false)}>
             <X color='#6B766A' />

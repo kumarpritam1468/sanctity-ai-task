@@ -4,31 +4,38 @@ import { resources } from '../data/data'
 
 const Resources = () => {
     return (
-        <section className=' relative z-10 h-fit bg-white rounded-3xl mx-4 p-4 mt-16'>
-            <div className=' flex flex-col gap-8 items-center justify-center py-20 px-32'>
+        <section className=' relative z-10 h-fit bg-white rounded-3xl mx-4 max-md:mx-2 p-4 mt-16'>
+
+            <div className=' flex flex-col gap-8 items-center justify-center py-20 max-md:py-8 px-32 max-md:px-0'>
+                
                 <div className=' flex w-full justify-between items-center'>
-                    <h1 className=' text-6xl font-medium text-ter'>Our latest resources</h1>
-                    <div className=' size-12 bg-[#E4ECE3] relative group cursor-pointer rounded-full flex items-center justify-center overflow-hidden'>
-                        <ArrowRight size={26} strokeWidth={1} className=' text-ter group-hover:translate-x-10 transition-all duration-300' />
+
+                    <h1 className=' text-6xl max-md:text-5xl font-medium text-ter'>Our latest resources</h1>
+
+                    <div className=' size-12 max-md:size-10 bg-[#E4ECE3] relative group cursor-pointer rounded-full flex items-center justify-center overflow-hidden'>
+                        <ArrowRight size={26} strokeWidth={1} className=' text-ter group-hover:translate-x-10 transition-all duration-300 max-md:scale-50' />
                         <div className='absolute size-12 bg-[#38473F] -translate-x-12 group-hover:-translate-x-0 transition-all duration-300 rounded-full flex items-center justify-center'>
                             <ArrowRight size={26} strokeWidth={1} className=' text-pri -translate-x-6 group-hover:translate-x-0 transition-all duration-300 delay-150' />
                         </div>
                     </div>
+
                 </div>
 
-                <div className=' grid grid-cols-3 gap-6 w-full'>
+
+
+                <div className=' grid grid-cols-3 max-md:grid-cols-1 max-md:grid-rows-3 gap-6 max-md:gap-y-12 w-full'>
                     {resources.map((resource, index) => (
                         <div key={index} className=' flex flex-col gap-2'>
-                            <div className=' h-48 w-full rounded-2xl overflow-hidden group relative flex items-center justify-center cursor-pointer'>
+                            <div className=' h-48 max-md:h-72 w-full rounded-2xl overflow-hidden group relative flex items-center justify-center cursor-pointer'>
                                 <img src={`/resources/rsc${index + 1}.jpg`} alt="Resource Image" className=' h-full w-full object-cover scale-125 group-hover:scale-[1.15] transition-all duration-500 ease-in-out' />
 
-                                <img src="/svg5.svg" alt="" className=' absolute -top-12 -right-12 group-hover:top-0 group-hover:right-0 transition-all duration-500 ease-in-out z-20 size-14' />
+                                <img src="/svg5.svg" alt="" className=' absolute -top-12 -right-12 group-hover:top-0 group-hover:right-0 transition-all duration-500 ease-in-out z-20 size-14 max-md:size-16 max-md:top-0 max-md:right-0' />
 
-                                <ArrowUpRight size={22} strokeWidth={1.5} className=' text-ter/70 absolute opacity-20 scale-50 group-hover:opacity-100 group-hover:scale-100 z-30 top-5 right-5 group-hover:top-2 group-hover:right-2 transition-all duration-500 ease-in-out' />
+                                <ArrowUpRight size={22} strokeWidth={1.5} className=' text-ter/70 absolute opacity-20 scale-50 group-hover:opacity-100 group-hover:scale-100 z-30 top-5 right-5 group-hover:top-2 group-hover:right-2 transition-all duration-500 ease-in-out max-md:opacity-100 max-md:scale-[.7] max-md:top-1 max-md:right-1' />
 
-                                <div className=' absolute top-0 left-0 bg-black/20 opacity-0 group-hover:opacity-100 h-full w-full z-10 group-hover:backdrop-blur-md transition-all duration-500'></div>
+                                <div className=' absolute top-0 left-0 bg-black/20 opacity-0 group-hover:opacity-100 h-full w-full z-10 group-hover:backdrop-blur-md transition-all duration-500 max-lg:hidden'></div>
 
-                                <p className=' absolute z-50 text-pri/60 text-sm translate-y-6 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500'>
+                                <p className=' absolute z-50 text-pri/60 text-sm translate-y-6 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 max-lg:hidden'>
                                     Read more
                                 </p>
                             </div>
@@ -52,9 +59,10 @@ const Resources = () => {
             </div>
 
 
-            <div className=' bg-[#D5EDD1] w-full h-64 grid grid-cols-2 gap-x-6 px-32 py-8 rounded-2xl'>
+            <div className=' bg-[#D5EDD1] w-full h-64 grid grid-cols-2 gap-x-6 max-md:gap-x-2 px-32 max-md:px-4 py-8 rounded-2xl'>
+
                 <div className=' flex flex-col justify-between'>
-                    <h2 className=' text-ter font-medium text-4xl'>
+                    <h2 className=' text-ter font-medium text-4xl max-md:text-3xl'>
                     Don't want to <br />
                     miss anything?
                     </h2>

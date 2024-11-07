@@ -24,19 +24,16 @@ const Reviews = () => {
     useEffect(() => {
         if (swiper) {
             swiper.on('reachBeginning', () => {
-                console.log('Reached beginning');
                 // Disable previous button
                 document.querySelector('.swiper-button-prev').disabled = true;
             });
 
             swiper.on('reachEnd', () => {
-                console.log('Reached end');
                 // Disable next button
                 document.querySelector('.swiper-button-next').disabled = true;
             });
 
             swiper.on('slideChange', () => {
-                console.log('Slide changed');
                 // Enable/disable buttons based on current slide
                 if (swiper.isBeginning) {
                     document.querySelector('.swiper-button-prev').disabled = true;
@@ -55,8 +52,10 @@ const Reviews = () => {
 
 
     return (
-        <section className=' relative h-fit pb-32 px-36 flex items-center justify-center'>
-            <div className="w-1/2 h-full flex flex-col gap-1 justify-center items-start">
+        <section className=' relative h-fit pb-32 px-36 max-md:px-6 flex max-md:flex-col max-md:gap-32 items-center justify-center'>
+
+            <div className="w-1/2 max-md:w-full h-full max-md:h-1/3 flex flex-col gap-1 justify-center items-start">
+
                 <h1 className=' text-pri text-6xl flex gap-4 font-medium'>
                     <span>Hear</span>
                     <span>it</span>
@@ -84,23 +83,29 @@ const Reviews = () => {
             </div>
 
 
-            <div className={`w-1/2 px-[4.75rem] relative  ${changing ? "opacity-0 translate-x-10 translate-y-10 rotate-[6deg]" : "translate-x-0 translate-y-2 rotate-[0deg] opacity-100"} transition-all duration-500 ease-in-out`}>
-                <button className='swiper-button-prev absolute -left-6 top-1/2 z-20 size-10 rounded-full bg-[#1E2421] group cursor-pointer overflow-hidden disabled:cursor-not-allowed disabled:opacity-40'>
+            <div className={`w-1/2 max-md:w-full px-[4.75rem] max-md:px-24 max-md:scale-[1.4] relative z-10  ${changing ? "opacity-0 translate-x-10 translate-y-10 rotate-[6deg]" : "translate-x-0 translate-y-2 rotate-[0deg] opacity-100"} transition-all duration-500 ease-in-out`}>
+
+                <button className='swiper-button-prev absolute max-md:hidden -left-6 top-1/2 z-20 size-10 rounded-full bg-[#1E2421] group cursor-pointer overflow-hidden disabled:cursor-not-allowed disabled:opacity-40'>
+
                     <div className="relative text-pri w-full h-full flex items-center justify-center">
                         <ArrowLeft size={18} strokeWidth={1} className='absolute right-3 group-hover:right-full transition-all duration-300 ease-in-out' />
                         <div className='size-10 absolute flex items-center justify-center rounded-full left-full bg-[#38473F] group-hover:left-0 transition-all duration-300 ease-in-out'>
                             <ArrowLeft size={18} strokeWidth={1} />
                         </div>
                     </div>
+
                 </button>
 
-                <button className='swiper-button-next absolute -right-6 top-1/2 z-20 size-10 rounded-full bg-[#1E2421] flex items-center justify-center group cursor-pointer overflow-hidden disabled:cursor-not-allowed disabled:opacity-40'>
+
+                <button className='swiper-button-next absolute max-md:hidden -right-6 top-1/2 z-20 size-10 rounded-full bg-[#1E2421] flex items-center justify-center group cursor-pointer overflow-hidden disabled:cursor-not-allowed disabled:opacity-40'>
+
                     <div className="relative text-pri w-full h-full flex items-center justify-center">
                         <ArrowRight size={18} strokeWidth={1} className='absolute left-3 group-hover:left-full transition-all duration-300 ease-in-out' />
                         <div className='size-10 absolute flex items-center justify-center rounded-full right-full bg-[#38473F] group-hover:right-0 transition-all duration-300 ease-in-out'>
                             <ArrowRight size={18} strokeWidth={1} />
                         </div>
                     </div>
+
                 </button>
 
 
